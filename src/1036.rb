@@ -1,8 +1,8 @@
 a, b, c = gets.strip.split(' ').map(&:to_f)
-delta = (b ** 2) - (4 * a * c)
+delta = (b**2) - (4 * a * c)
 divisor = 2 * a
 
-if delta < 0 || divisor == 0
+if delta < 0 || divisor.zero?
   puts 'Impossivel calcular'
 else
   delta = Math.sqrt(delta)
